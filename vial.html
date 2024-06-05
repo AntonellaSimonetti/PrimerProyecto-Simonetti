@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylevial.css">
+</head>
+<body>
+    <header id="inicio">
+        <img src="logo.PNG" alt="logo" class="logo">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="automotor.html">Mecanica Automotriz</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <ul>
+            <li>
+                <h3>Diagnóstico de Fallas Eléctricas</h3>
+                <p>Identificación y reparación de problemas eléctricos en vehículos en carretera.</p>
+            </li>
+            <li>
+                <h3>Reparación de Motor de Translocación</h3>
+                <p>Servicios especializados en la reparación y mantenimiento de motores de translocación.</p>
+            </li>
+            <li>
+                <h3>Reparación de Orugas</h3>
+                <p>Reparación y reemplazo de sistemas de orugas para vehículos especializados.</p>
+            </li>
+            <li>
+                <h3>Reemplazo de Batería</h3>
+                <p>Diagnosticamos y sustituimos baterías descargadas o defectuosas.</p>
+            </li>
+            <li>
+                <h3>Reparaciones Menores</h3>
+                <p>Realizamos pequeñas reparaciones en el lugar para que el vehículo pueda continuar su viaje.</p>
+            </li>
+            <li>
+                <h3>Diagnóstico en Carretera</h3>
+                <p>Utilizamos equipos portátiles para diagnosticar fallos en el vehículo en el lugar del incidente.</p>
+            </li>
+            <li>
+                <h3>Alineación y Balanceo</h3>
+                <p>Alineación y balanceo de las ruedas para un manejo óptimo y seguro.</p>
+            </li>
+            <li>
+                <h3>Reparación de Sistemas de Climatización</h3>
+                <p>Mantenimiento y reparación de sistemas de aire acondicionado y calefacción.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="gallery">
+        <img src="vial/vial1.jpeg" alt="vial" onclick="changeImage(0)">
+        <img src="vial/vial2.jpeg" alt="vial" onclick="changeImage(1)">
+        <img src="vial/vial3.jpeg" alt="vial" onclick="changeImage(2)">
+        <img src="vial/vial4.jpeg" alt="vial" onclick="changeImage(3)">
+        <img src="vial/vial5.jpeg" alt="vial" onclick="changeImage(4)">
+        <img src="vial/vial6.jpeg" alt="vial" onclick="changeImage(5)">
+    </section>
+
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="displayedImage" src="automotriz/auto1.jpeg" alt="auto">
+        </div>
+    </div>
+
+    <footer>
+        <a href="#inicio">Ir al comienzo</a>
+        <p>Copiright©2024 </p>
+    </footer>
+
+    <script src="scriptvial.js"></script>
+</body>
+</html>

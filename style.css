@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+nav {
+    display: flex;
+}
+
+ul.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.menu li {
+    margin-left: 20px;
+}
+
+ul.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul.menu li a:hover {
+    color: yellow;
+}
+
+.slider-box {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 600%;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.texto {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.texto h2 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.slider-box img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; 
+    display: block;
+}
+
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+
+.video {
+    text-align: center;
+}
+
+.video h2{
+    margin: 20px;
+    text-align: center;
+}
+
+.video div {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.video p {
+    width: 60%; /* Ancho del párrafo */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 20px; /* Espacio interno */
+    border: 2px solid yellow; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.mision, .vision {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.mision h2, .vision h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.mision p, .vision p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.mision {
+    border-left: 5px solid yellow;
+}
+
+.vision {
+    border-left: 5px solid yellow;
+}
+
+.valores {
+    text-align: center;
+}
+.valores ul {
+    list-style: none;
+    padding: 0;
+}
+.valores li {
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+    vertical-align: top;
+}
+.valores img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+.valores h2, .valores p {
+    text-align: center;
+}
+
+#services {
+    text-align: center;
+    margin: 20px;
+}
+
+.services-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.services-list .service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 500px; 
+}
+
+.service-item:hover h3 a {
+    color: yellow;
+}
+
+.image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden; 
+    background: #f0f0f0; 
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel h2{
+    text-align: center;
+}
+.carousel {
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0;
+}
+.carousel ul {
+    display: flex;
+    width: 400%;
+    padding: 0;
+    margin: 0;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+
+.carousel li {
+    width: 25%;
+    list-style: none;
+    position: relative
+}
+
+.carousel-container img {
+    width: 25%;
+    object-fit: cover; 
+    display: block;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 3rem;
+    margin-top: 30px;
+}
+
+footer section{
+    float: right;
+}
+
+footer p{
+    margin: 0;
+}
+
+footer a {
+    transition: color 0.3 ease;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: yellow;
+}
+
+
+@media(max-width:991px){
+    body{
+        padding: 30px;
+    }
+
+    .slider-box{
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px) {
+    .slider-box {
+        height: 200px;
+    }
+    
+    .slider-box img {
+        height: 200px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+

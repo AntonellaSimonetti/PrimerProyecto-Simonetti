@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylecontacto.css">
+</head>
+<body>
+    <header>
+        <img src="logo.PNG" alt="logo" class="logo">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="vial.html">Mecanica Vial</a></li>
+                <li><a href="automotor.html">Mecanica Automotriz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <h1>Pongase en contacto con nosotros</h1>
+        <form action="https://formsubmit.co/68aa9adb95c20b730f10deda99d165cc" method="POST"> 
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+            <br><br>
+            <label for="apellido">Apellido: </label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+            <br><br>
+            <label for="sexo">Sexo:</label><br>
+            <input type="radio" id="sexo-masculino" name="sexo" value="masculino">
+            <label for="sexo-masculino">Masculino</label><br>
+            <input type="radio" id="sexo-femenino" name="sexo" value="femenino">
+            <label for="sexo-femenino">Femenino</label><br>
+            <input type="radio" id="sexo-no-binario" name="sexo" value="no-binario">
+            <label for="sexo-no-binario">No Binario</label><br>
+            <input type="radio" id="sexo-no-especificado" name="sexo" value="no-especificado">
+            <label for="sexo-no-especificado">Prefiero no especificar</label>
+            <br><br>
+            <label for="codigo">Codigo postal: </label>
+            <input type="text" id="codigo" name="codigo" placeholder="Ingrese su codigo postal">
+            <br><br>
+            <label for="ciudad">Ciudad: </label>
+            <input type="text" id="ciudad" name="ciudad" placeholder="Ingrese su ciudad">
+            <br><br>
+            <label for="correo">Ingrese su email: </label>
+            <input type="email" id="correo" name="correo" placeholder="No se olvide el @">
+            <br><br>
+            <label for="telefono">Telefono </label>
+            <input type="text" id="telefono" name="telefono" placeholder="Ingrese su telefono">
+            <br><br>
+            <label for="motivo">Motivo: </label>
+            <input type="text" id="motivo" name="motivo" placeholder="Ingrese su motivo">
+            <br><br>
+            <label for="mensaje">Mensaje: </label>
+            <textarea cols="50" rows="10" id="mensaje" placeholder="Ingrese su comentario" name="mensaje"></textarea>
+            <br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <a href="#contact">Ir al comienzo</a>
+        <p>Copiright©2024 </p>
+    </footer>
+
+    <script src="validacion.js"></script>
+    
+</body>
+</html>

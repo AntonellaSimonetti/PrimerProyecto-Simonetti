@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+nav {
+    display: flex;
+}
+
+ul.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.menu li {
+    margin-left: 20px;
+}
+
+ul.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul.menu li a:hover {
+    color: yellow;
+}
+
+#servicios {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#servicios h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#servicios ul {
+    list-style: none;
+    padding: 0;
+}
+
+#servicios li {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+#servicios li:last-child {
+    border-bottom: none;
+}
+
+#servicios h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+#servicios p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+#servicios h3:hover {
+    color: #0056b3;
+    transition: color 0.3s;
+}
+
+#servicios p:hover {
+    color: #444;
+    transition: color 0.3s;
+}
+
+#servicios li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.gallery-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 3rem;
+    margin-top: 30px;
+}
+
+footer section{
+    float: right;
+}
+
+footer p{
+    margin: 0;
+}
+
+footer a {
+    transition: color 0.3 ease;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: yellow;
+}
